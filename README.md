@@ -4,6 +4,8 @@ Craigsfresh.py
 A simple way to monitor craigslist sections
 -------------------------------------------
 
+Craigsfresh monitors a CL section for new listings, and beeps to alert the user when new ads are found.
+
 Craigsfresh is a basic script, and very unpolished. It takes three arguments on the command line: 
 * a (craigslist) url -- this should be a section with ads
 * long delay period (in seconds)
