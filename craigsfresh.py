@@ -111,3 +111,5 @@ if __name__ == "__main__":
 			
 			#print "Time passed is %s seconds, last update %s" % (passed, extract_time_string(page.text)[12:])
 			time.sleep(1)
+
+
