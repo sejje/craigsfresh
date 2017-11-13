@@ -1,0 +1,32 @@
+have a Fetcher class as part of a Section?
+
+
+have a list of Watch objects
+
+loop over list
+  if it's not time yet:
+	  pass
+  else:
+	  send request with callback
+
+Watch.callback:
+	save html as soup
+	test for differences
+
+
+
+what if two Watches are watching the same URL?
+	1) watch could request from a cache
+	2) Watch could request from Sub, sub does the watching
+	  2a) Maybe Sub can push event to relevant Watches, so maybe
+
+ALTERNATE:
+	have a list of Sub objects (and a list of Watch objects)
+	loop over Subs:
+		if it's not time yet: pass
+		if it's time: request with callback
+
+	Subs.callback:
+		for elem in Watch:
+			if Watch.url = self.url:
+				Watch.do_shit
